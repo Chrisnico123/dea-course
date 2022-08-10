@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body {
+    background-color: rgb(23, 23, 23);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 800px;
+    margin: 100px auto;
+    border: 1px white solid;
+    padding: 50px;
+}
+
+.input {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    border: 1px white solid;
+    background-color: rgb(23, 23, 23);
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+.nav {
+    display: grid;
+    grid-template-columns: 1100px 100px;
+    justify-content: space-evenly;
+    padding: 15px;
+    height: 30px;
+    border-bottom: 1px white solid;
+}
+
+.nav > button {
+    background-color: rgb(244, 158, 11);
+    border: 1px white solid;
+    padding: 5px;
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.white {
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+@media screen and (max-width: 1280px) {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 912px) {
+    .container {
+        width: 600px;
+        padding: 20px;
+    }
+    .container > form {
+        width: 600px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .container {
+        width: 350px;
+    }
+    .container > form {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .container {
+        width: 300px;
+    }
+    .container > form {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 375px) {
+}
