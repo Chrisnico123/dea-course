@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: rgb(23, 23, 23);
+}
+
+.center {
+    padding: 200px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    height: 30px;
+    border-bottom: 1px white solid;
+}
+
+.nav1 {
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav1 > button {
+    background-color: rgb(23, 23, 23);
+    border: 1px white solid;
+    padding: 5px;
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.detail {
+    background-color: rgb(244, 158, 11);
+    border: 1px white solid;
+    height: 40px;
+    width: 100px;
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.detail > a {
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+}
+.item > h1 {
+    height: 260px;
+}
+
+.item {
+    border: 1px white solid;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+
+/* login */
+.log {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+.left {
+    margin: 35% auto;
+    width: 80%;
+}
+
+.right {
+    width: 100%;
+    margin-top: 20%;
+}
+
+.input {
+    width: 50%;
+    height: 40px;
+    margin: 10px;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    border: 1px white solid;
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.form {
+    height: 100%;
+}
+
+.form > button {
+    width: 50%;
+    height: 40px;
+    margin: 10px;
+    margin-top: 100px;
+    border: 1px solid white;
+    background-color: rgb(244, 158, 11);
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.btn > button {
+    width: 100px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: rgb(244, 158, 11);
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.artikel {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.font {
+    font-size: 40px;
+}
+@media screen and (max-width: 1280px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .input {
+        width: 300px;
+    }
+    .form > button {
+        width: 300px;
+    }
+    .font {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .font {
+        font-size: 25px;
+    }
+    .center > form {
+        margin: 0 auto;
+    }
+    .full {
+        width: 100%;
+    }
+    .nav {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .log {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .font {
+        font-size: 35px;
+    }
+    .right {
+        width: 60%;
+        margin: 50px auto;
+    }
+
+    .center {
+        width: 300px;
+        margin: 0 -180px;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+    .item {
+        width: 200px;
+        height: 200px;
+    }
+    .item > h1 {
+        height: 170px;
+        font-size: 20px;
+    }
+    .detail {
+        height: 30px;
+        width: 70px;
+        box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    }
+}
+@media screen and (max-width: 415px) {
+    .log {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .font {
+        font-size: 30px;
+    }
+    .right {
+        width: 80%;
+        margin: 100px auto;
+    }
+    .center {
+        width: 200px;
+    }
+
+    .center > form > input {
+        width: 300px;
+    }
+
+    .center > form > button {
+        width: 300px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+    .item {
+        width: 250px;
+        height: 250px;
+    }
+    .item > h1 {
+        height: 230px;
+        font-size: 25px;
+    }
+    .detail {
+        height: 30px;
+        width: 70px;
+        box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+        -moz-box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 1);
+    }
+}
+@media screen and (max-width: 415px) {
+    .log {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .font {
+        font-size: 30px;
+    }
+    .right {
+        width: 80%;
+        margin: 100px auto;
+    }
+    .center {
+        width: 160px;
+    }
+
+    .center > form > input {
+        width: 300px;
+    }
+
+    .center > form > button {
+        width: 300px;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 375px) {
+    .log {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .font {
+        font-size: 25px;
+    }
+    .right {
+        width: 85%;
+        margin: 50px auto;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+    .center {
+        width: 150px;
+    }
+
+    .center > form > input {
+        width: 250px;
+    }
+
+    .center > form > button {
+        width: 250px;
+    }
+}
